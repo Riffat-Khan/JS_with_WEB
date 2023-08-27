@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practice_1 JS_with_Web</title>
+
+</head>
+<body>
+    <!-- textContent -->
+    <h1 id="title">Practice_1 => JS_with_Web</h1>
+
+    <h2 id="subtitle"></h2>
+    <h1>Second h1</h1>
+    <p class="text text_1">1</p>
+    <p class="text">2</p>
+    <p class="text">3</p>
+    <p class="text">4</p>
+    <p class="text">5</p>
+
+    <input id="setPlaceholder" type="text">
+              
+
+    <button id="button" onclick="document.getElementById('button').innerHTML = 'Button is clicked'; " >Click me!</button>
+
+    <button onclick="this.innerHTML = 'Button is clicked' " >Click me!</button>
+
+
+    <button id="date" onclick="date()" >Display date</button>
+
+    <div id="container" style="border: 5px solid blueviolet;"></div>
+
+    <div id="container_1" style="border: 5px solid rgb(202, 22, 34);"></div>
+
+
+    <div id="mcd">
+        Dummy Content
+        <h1>Multiple child element</h1>
+        <h1>Child_1</h1>
+        <h1>Child_2</h1>
+    </div>
+
+</body>
+<script>
+    //Finding HTML Elements
+    document.getElementById('subtitle').innerHTML = 'Get Element by Id';
+    document.getElementById('subtitle').innerText = 'Get Element by innerText';
+    document.getElementsByTagName('h1');
+    const className = document.getElementsByClassName('text');
+    console.log(className);
+    //End - Finding HTML Elements
+
+    className[2].innerText = 'Access at index 2 ';
+    className[2].className = 'boldBlueText';
+    // className[3].classList = ['boldBlueText'];
+    className[2].className = `${className[2].className} boldBlueText`;
+    // className[3].classList[0] = ['boldBlueText'];
+
+    const input = document.getElementById('setPlaceholder');
+    input.setAttribute('placeholder' , 'Enter text here');
+
+    //CSS
+    input.style.color = 'purple';
+    input.style.fontSize = '20px';
+    input.style.outline = 'none';
+
+
+    const date = () => {
+        document.getElementById('date').innerHTML = new Date();
+    }
+
+
+    //creat element in html
+    const newElement = document.createElement('h1');
+    newElement.innerHTML = 'new Element';
+    document.body.appendChild(newElement);
+
+    const newElement_1 = document.createElement('h1');
+    newElement_1.innerHTML = 'new Element';
+    document.getElementById('container').appendChild(newElement_1);
+
+    const newElement_2 = document.createElement('h1');
+    newElement_2.innerHTML = 'new Element';
+    document.getElementById('container_1').appendChild(newElement_2);
+
+    //remove element in html
+    document.getElementById('container').remove(newElement_1);
+
+    // DOM can't recognize pop and push methods
+    const mcd = document.getElementById('mcd');
+    mcd.removeChild(mcd.firstElementChild);
+    mcd.removeChild(mcd.children[1]);
+
+
+
+
+</script>
+</html>
