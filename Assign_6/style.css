@@ -1,0 +1,78 @@
+.style{
+    background-color: rgb(144, 96, 165);
+    color: firebrick;
+    font-weight: bold;
+    width: 30%;
+}
+
+.change{
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+}
+
+.image{
+    width: 300px;
+    border: 3px solid indigo ;
+    margin-top: 30px;
+}
+
+button{
+    width: 150px;
+    background-color: maroon;
+    color: hotpink;
+    border: 3px solid hotpink;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    margin-top:30px;
+}
+
+.blockDisplay{
+    display: block;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+.heading{
+    text-align: center;
+    color: purple;
+}
+
+#sec_1{
+    background-color: brown;
+    height: 100px;
+}
+
+#sec_2{
+    background-color: black;
+    height: 100px;
+}
+
+.head{
+    background-color: cadetblue;
+    text-align: center;
+    padding: 10px;
+}
+
+.navStyl li{
+    list-style: none;
+    display: inline;
+    padding-right: 50px;
+    color: black;
+}
+
+.main{
+    background-color: rgb(95, 158, 160, 0.5);
+    height: 300px;
+    text-align: center;
+}
