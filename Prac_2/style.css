@@ -1,0 +1,23 @@
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button{
+    width: 50px;
+    display: inline-block;
+    flex-direction: row;
+}
